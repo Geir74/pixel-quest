@@ -9,21 +9,21 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: 'Dogs', icon: 'dog', level: 5, maxLevel: 5 },
+  { name: 'Dogs', icon: 'dog', level: 3, maxLevel: 5 },
   { name: 'Woodworking', icon: 'hammer', level: 3, maxLevel: 5 },
   { name: 'Electronics', icon: 'bolt', level: 3, maxLevel: 5 },
-  { name: 'Cars', icon: 'car', level: 4, maxLevel: 5 },
+  { name: 'Cars', icon: 'car', level: 3, maxLevel: 5 },
   { name: 'Hunting', icon: 'target', level: 3, maxLevel: 5 },
-  { name: 'Trekking', icon: 'mountain', level: 4, maxLevel: 5 },
+  { name: 'Trekking', icon: 'mountain', level: 3, maxLevel: 5 },
   { name: 'Canoeing', icon: 'boat', level: 3, maxLevel: 5 },
-  { name: 'Fishing', icon: 'fish', level: 4, maxLevel: 5 },
-  { name: 'Coffee', icon: 'coffee', level: 5, maxLevel: 5 },
-  { name: 'Travelling', icon: 'compass', level: 4, maxLevel: 5 },
+  { name: 'Fishing', icon: 'fish', level: 3, maxLevel: 5 },
+  { name: 'Coffee', icon: 'coffee', level: 3, maxLevel: 5 },
+  { name: 'Travelling', icon: 'compass', level: 3, maxLevel: 5 },
   { name: 'Music', icon: 'music', level: 3, maxLevel: 5 },
   { name: 'Photography', icon: 'camera', level: 3, maxLevel: 5 },
-  { name: 'Wildlife', icon: 'paw', level: 4, maxLevel: 5 },
-  { name: 'Books', icon: 'book', level: 4, maxLevel: 5 },
-  { name: 'Movies/Series', icon: 'film', level: 5, maxLevel: 5 },
+  { name: 'Wildlife', icon: 'paw', level: 3, maxLevel: 5 },
+  { name: 'Books', icon: 'book', level: 3, maxLevel: 5 },
+  { name: 'Movies/Series', icon: 'film', level: 3, maxLevel: 5 },
 ];
 
 const SkillBadge: React.FC<{ skill: Skill }> = ({ skill }) => {
