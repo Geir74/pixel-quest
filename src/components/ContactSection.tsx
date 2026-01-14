@@ -38,7 +38,7 @@ export const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 bg-mossy/30 relative">
+    <section id="contact" className="py-20 px-4 relative bg-tavern overflow-hidden">
       {/* Decorative corner pieces */}
       <div className="absolute top-4 left-4 w-8 h-8 border-t-4 border-l-4 border-tan" />
       <div className="absolute top-4 right-4 w-8 h-8 border-t-4 border-r-4 border-tan" />

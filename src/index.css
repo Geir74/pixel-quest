@@ -271,6 +271,90 @@
       inset 0 0 0 2px hsl(var(--saddle-brown)),
       8px 8px 0 hsl(var(--bark));
   }
+
+  /* Fantasy Background Scenes */
+  .bg-fantasy-forest {
+    background: 
+      /* Subtle tree silhouettes */
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,10 20,90 80,90' fill='%23556B2F' opacity='0.08'/%3E%3C/svg%3E") repeat,
+      /* Ground gradient */
+      linear-gradient(180deg, 
+        hsl(80 30% 12%) 0%, 
+        hsl(120 25% 15%) 40%,
+        hsl(80 20% 12%) 100%
+      );
+    background-size: 120px 120px, 100% 100%;
+  }
+
+  .bg-parchment-map {
+    background: 
+      /* Compass rose hint */
+      radial-gradient(circle at 90% 10%, hsl(43 40% 35% / 0.15) 0%, transparent 20%),
+      /* Map fold lines */
+      repeating-linear-gradient(90deg, transparent, transparent 200px, hsl(30 30% 25% / 0.1) 200px, hsl(30 30% 25% / 0.1) 201px),
+      repeating-linear-gradient(0deg, transparent, transparent 150px, hsl(30 30% 25% / 0.08) 150px, hsl(30 30% 25% / 0.08) 151px),
+      /* Parchment texture */
+      radial-gradient(ellipse at 50% 50%, hsl(35 35% 22%) 0%, hsl(35 25% 16%) 100%);
+  }
+
+  .bg-tavern {
+    background: 
+      /* Warm glow spots */
+      radial-gradient(circle at 20% 30%, hsl(30 60% 20% / 0.4) 0%, transparent 30%),
+      radial-gradient(circle at 80% 70%, hsl(25 50% 18% / 0.3) 0%, transparent 25%),
+      /* Wood plank hints */
+      repeating-linear-gradient(90deg, 
+        hsl(25 35% 15%) 0px,
+        hsl(20 30% 12%) 3px,
+        hsl(25 40% 18%) 6px,
+        hsl(25 35% 14%) 12px
+      ),
+      linear-gradient(180deg, hsl(25 35% 16%) 0%, hsl(20 30% 12%) 100%);
+  }
+
+  .bg-dungeon {
+    background: 
+      /* Torch glow */
+      radial-gradient(circle at 15% 50%, hsl(35 70% 30% / 0.15) 0%, transparent 25%),
+      radial-gradient(circle at 85% 50%, hsl(35 70% 30% / 0.15) 0%, transparent 25%),
+      /* Stone texture */
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='0' y='0' width='40' height='20' fill='%23333' opacity='0.1'/%3E%3Crect x='20' y='20' width='20' height='20' fill='%23222' opacity='0.08'/%3E%3C/svg%3E") repeat,
+      linear-gradient(180deg, hsl(30 15% 14%) 0%, hsl(30 20% 10%) 100%);
+    background-size: auto, auto, 40px 40px, 100% 100%;
+  }
+
+  .bg-night-sky {
+    background: 
+      /* Stars */
+      radial-gradient(1px 1px at 20% 30%, hsl(45 80% 80% / 0.8), transparent),
+      radial-gradient(1px 1px at 40% 70%, hsl(45 80% 80% / 0.6), transparent),
+      radial-gradient(1px 1px at 60% 20%, hsl(45 80% 80% / 0.7), transparent),
+      radial-gradient(1px 1px at 80% 60%, hsl(45 80% 80% / 0.5), transparent),
+      radial-gradient(2px 2px at 10% 80%, hsl(45 80% 80% / 0.9), transparent),
+      radial-gradient(1px 1px at 90% 40%, hsl(45 80% 80% / 0.6), transparent),
+      radial-gradient(1px 1px at 35% 55%, hsl(45 80% 80% / 0.5), transparent),
+      radial-gradient(1px 1px at 75% 85%, hsl(45 80% 80% / 0.7), transparent),
+      radial-gradient(1px 1px at 55% 45%, hsl(45 80% 80% / 0.4), transparent),
+      radial-gradient(1px 1px at 25% 15%, hsl(45 80% 80% / 0.6), transparent),
+      /* Sky gradient */
+      linear-gradient(180deg, hsl(220 30% 8%) 0%, hsl(260 20% 12%) 50%, hsl(30 20% 12%) 100%);
+  }
+
+  /* Decorative pixel trees */
+  .pixel-trees::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cpolygon points='30,5 10,55 50,55' fill='%23556B2F' opacity='0.25'/%3E%3Crect x='27' y='50' width='6' height='10' fill='%238B4513' opacity='0.2'/%3E%3C/svg%3E") repeat-x;
+    background-size: 60px 60px;
+    background-position: bottom;
+    pointer-events: none;
+    opacity: 0.6;
+  }
 }
 
 @layer utilities {

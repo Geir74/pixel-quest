@@ -123,7 +123,7 @@ const QuestCard: React.FC<{ quest: Quest; index: number }> = ({ quest, index }) 
 
 export const ProjectsSection: React.FC = () => {
   return (
-    <section id="projects" className="py-20 px-4 relative">
+    <section id="projects" className="py-20 px-4 relative bg-dungeon">
       <div className="max-w-5xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12">
