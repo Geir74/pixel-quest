@@ -21,27 +21,26 @@ export const HeroSection: React.FC = () => {
   return (
     <section 
       id="hero" 
-      className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden scanlines"
+      className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden scanlines bg-night-sky"
     >
-      {/* Pixel Art Background Pattern */}
-      <div className="absolute inset-0 opacity-20">
-        <div 
-          className="w-full h-full"
-          style={{
-            backgroundImage: `
-              linear-gradient(90deg, hsl(var(--forest-green)) 1px, transparent 1px),
-              linear-gradient(hsl(var(--forest-green)) 1px, transparent 1px)
-            `,
-            backgroundSize: '32px 32px',
-          }}
-        />
+      {/* Mountain silhouettes */}
+      <div className="absolute bottom-0 left-0 right-0 h-48 opacity-40">
+        <svg className="w-full h-full" viewBox="0 0 1200 200" preserveAspectRatio="none">
+          <polygon points="0,200 150,80 300,150 450,60 600,120 750,40 900,100 1050,50 1200,130 1200,200" fill="hsl(80 30% 15%)" />
+          <polygon points="0,200 100,120 250,160 400,90 550,140 700,70 850,130 1000,80 1150,140 1200,100 1200,200" fill="hsl(120 25% 12%)" />
+        </svg>
       </div>
 
-      {/* Decorative pixels */}
-      <div className="absolute top-20 left-10 w-4 h-4 bg-gold animate-pulse" />
-      <div className="absolute top-40 right-20 w-3 h-3 bg-primary animate-pulse delay-100" />
-      <div className="absolute bottom-32 left-1/4 w-2 h-2 bg-tan animate-pulse delay-200" />
-      <div className="absolute top-1/3 right-1/3 w-4 h-4 bg-olive animate-pulse delay-300" />
+      {/* Pixel tree silhouettes */}
+      <div className="absolute bottom-0 left-0 right-0 pixel-trees" />
+
+      {/* Stars twinkling */}
+      <div className="absolute top-20 left-[10%] w-1 h-1 bg-gold/80 animate-pulse" />
+      <div className="absolute top-32 right-[15%] w-1.5 h-1.5 bg-parchment/60 animate-pulse delay-300" />
+      <div className="absolute top-48 left-[30%] w-1 h-1 bg-gold/70 animate-pulse delay-500" />
+      <div className="absolute top-24 right-[35%] w-1 h-1 bg-parchment/50 animate-pulse delay-700" />
+      <div className="absolute top-60 left-[60%] w-1.5 h-1.5 bg-gold/60 animate-pulse delay-200" />
+      <div className="absolute top-16 left-[80%] w-1 h-1 bg-parchment/70 animate-pulse delay-400" />
 
       <div className="relative z-10 text-center px-4">
         {/* Title Frame */}

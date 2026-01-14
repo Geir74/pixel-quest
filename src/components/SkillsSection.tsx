@@ -49,7 +49,7 @@ const SkillBadge: React.FC<{ skill: Skill }> = ({ skill }) => {
 
 export const SkillsSection: React.FC = () => {
   return (
-    <section id="skills" className="py-20 px-4 bg-mossy/30 relative">
+    <section id="skills" className="py-20 px-4 relative bg-fantasy-forest overflow-hidden">
       {/* Decorative corner pieces */}
       <div className="absolute top-4 left-4 w-8 h-8 border-t-4 border-l-4 border-tan" />
       <div className="absolute top-4 right-4 w-8 h-8 border-t-4 border-r-4 border-tan" />
