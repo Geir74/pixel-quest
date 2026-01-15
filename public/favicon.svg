@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <!-- Purple background -->
+  <rect width="192" height="192" fill="#7c3aed"/>
+
+  <!-- White card background -->
+  <rect x="24" y="24" width="144" height="144" fill="#ffffff" rx="12"/>
+
+  <!-- Top-left corner rank and suit -->
+  <text x="40" y="55" font-family="serif" font-size="28" font-weight="bold" fill="#000000">A</text>
+  <text x="40" y="75" font-family="serif" font-size="20" fill="#000000">♠</text>
+
+  <!-- Bottom-right corner rank and suit (rotated) -->
+  <g transform="translate(152, 152) rotate(180)">
+    <text x="0" y="20" font-family="serif" font-size="28" font-weight="bold" fill="#000000">A</text>
+    <text x="0" y="40" font-family="serif" font-size="20" fill="#000000">♠</text>
+  </g>
+
+  <!-- Large center spade symbol -->
+  <g transform="translate(96, 96)">
+    <!-- Spade shape -->
+    <path d="M 0,-35 C -12,-20 -20,-8 -20,5 C -20,18 -12,28 0,28 C 12,28 20,18 20,5 C 20,-8 12,-20 0,-35 Z" fill="#000000"/>
+    <!-- Spade stem -->
+    <rect x="-3" y="28" width="6" height="15" fill="#000000"/>
+  </g>
+</svg>
